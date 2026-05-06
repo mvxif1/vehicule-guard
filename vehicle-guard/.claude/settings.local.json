@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(docker --version)",
+      "Bash(code --version)",
+      "Bash(git --version)",
+      "Bash(pip show *)",
+      "Bash(pip install *)",
+      "Bash(pio --version)",
+      "Bash(code --install-extension platformio.platformio-ide)",
+      "Bash(code --install-extension ms-vscode.cpptools)",
+      "Bash(code --install-extension dbaeumer.vscode-eslint)",
+      "Bash(code --install-extension esbenp.prettier-vscode)",
+      "PowerShell(& \"C:\\\\Users\\\\mferrer\\\\AppData\\\\Local\\\\Programs\\\\Microsoft VS Code\\\\bin\\\\code.cmd\" --install-extension platformio.platformio-ide 2>&1)",
+      "PowerShell(& \"C:\\\\Users\\\\mferrer\\\\AppData\\\\Local\\\\Programs\\\\Microsoft VS Code\\\\bin\\\\code.cmd\" --install-extension ms-vscode.cpptools 2>&1)",
+      "PowerShell(& \"C:\\\\Users\\\\mferrer\\\\AppData\\\\Local\\\\Programs\\\\Microsoft VS Code\\\\bin\\\\code.cmd\" --install-extension dbaeumer.vscode-eslint 2>&1)",
+      "PowerShell(& \"C:\\\\Users\\\\mferrer\\\\AppData\\\\Local\\\\Programs\\\\Microsoft VS Code\\\\bin\\\\code.cmd\" --install-extension esbenp.prettier-vscode 2>&1)",
+      "Bash(pio project *)",
+      "Bash(npm init *)",
+      "Bash(npm list *)",
+      "Bash(npm install *)",
+      "Bash(nest new *)",
+      "Bash(python3 -)"
+    ]
+  }
+}

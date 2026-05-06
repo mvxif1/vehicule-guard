@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npm install)",
+      "Bash(npm run *)",
+      "Bash(nest new *)",
+      "Bash(nest generate *)",
+      "Bash(pip install *)",
+      "Bash(pip show *)",
+      "Bash(pio *)",
+      "Bash(rm *)",
+      "Bash(mkdir *)",
+      "Bash(mv *)",
+      "Bash(cp *)",
+      "Bash(code *)"
+    ]
+  }
+}
