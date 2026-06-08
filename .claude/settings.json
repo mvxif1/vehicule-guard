@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npm install)",
+      "Bash(npm run *)",
+      "Bash(npm test *)",
+      "Bash(npm test)",
+      "Bash(nest new *)",
+      "Bash(nest generate *)",
+      "Bash(pio *)",
+      "Bash(docker compose *)",
+      "Bash(docker build *)",
+      "Bash(rm *)",
+      "Bash(mkdir *)",
+      "Bash(mv *)",
+      "Bash(cp *)",
+      "Bash(code *)",
+      "Bash(node *)",
+      "Bash(npx *)"
+    ]
+  }
+}

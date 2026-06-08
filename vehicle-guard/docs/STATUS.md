@@ -28,17 +28,16 @@
 
 ## Pendientes inmediatos
 
-- [ ] Instalar Docker Desktop
-- [ ] Soldar header pins al GPS Neo-6M
-- [ ] Levantar broker con `docker compose up -d` en `backend/`
-- [ ] Editar `firmware/src/config.h` con SSID, password y IP del PC (ver con `ipconfig`)
-- [ ] Flashear firmware completo (código en `docs/roadmap/fase1-prototipo-paso-a-paso.md` Paso 7)
-- [ ] Verificar telemetría llegando en MQTT Explorer cada 10 segundos
+- [ ] Instalar Docker Desktop → https://www.docker.com/products/docker-desktop/
+- [x] Conectar GPS Neo-6M al ESP32 (GPIO16=RX, GPIO17=TX, 3V3, GND) ← **hecho**
+- [ ] Editar `firmware/src/config.h` con SSID, password y la IP de tu PC (`ipconfig`)
+- [ ] Flashear firmware: `pio run -d firmware --target upload`
+- [ ] Levantar broker: `cd backend && docker compose up -d`
+- [ ] Verificar telemetría en MQTT Explorer suscrito a `devices/#`
 
 ## Bloqueadores
 
-- GPS Neo-6M necesita soldadura de header pins
-- Docker Desktop no instalado aún
+- Docker Desktop no instalado aún (necesario para levantar Mosquitto + PostgreSQL)
 
 ## Notas para Claude (próxima sesión)
 

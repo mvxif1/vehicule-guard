@@ -1,0 +1,29 @@
+{
+  "configurations": [
+    {
+      "name": "ESP32 Arduino",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "C:/Users/ADMIN/AppData/Local/Arduino15/packages/esp32/hardware/esp32/3.3.8/cores/esp32",
+        "C:/Users/ADMIN/AppData/Local/Arduino15/packages/esp32/hardware/esp32/3.3.8/variants/esp32",
+        "C:/Users/ADMIN/AppData/Local/Arduino15/packages/esp32/hardware/esp32/3.3.8/libraries/**",
+        "C:/Users/ADMIN/AppData/Local/Arduino15/packages/esp32/tools/esp-x32/2601/xtensa-esp-elf/include",
+        "C:/Users/ADMIN/AppData/Local/Arduino15/packages/esp32/tools/esp-x32/2601/lib/gcc/xtensa-esp-elf/14.2.0/include",
+        "C:/Users/ADMIN/Documents/Arduino/libraries/ArduinoJson/src",
+        "C:/Users/ADMIN/Documents/Arduino/libraries/PubSubClient/src",
+        "C:/Users/ADMIN/Documents/Arduino/libraries/TinyGPSPlus/src"
+      ],
+      "defines": [
+        "ARDUINO=10819",
+        "ESP32",
+        "ESP_PLATFORM",
+        "F_CPU=240000000L"
+      ],
+      "compilerPath": "C:/Users/ADMIN/AppData/Local/Arduino15/packages/esp32/tools/esp-x32/2601/bin/xtensa-esp32-elf-gcc.exe",
+      "cStandard": "c17",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "gcc-x64"
+    }
+  ],
+  "version": 4
+}
