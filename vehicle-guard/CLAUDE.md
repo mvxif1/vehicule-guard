@@ -1,4 +1,4 @@
-111# CLAUDE.md
+# CLAUDE.md
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
@@ -300,5 +300,36 @@ Si Maximiliano pide algo de esta lista, recordarle el alcance y solo proceder co
 
 ---
 
-**Última actualización:** Fase 0 — versión inicial del documento.
+**Última actualización:** Fase 0 — sesión 2 (configuración entorno de desarrollo).
 **Mantenedor:** Maximiliano Ferrer Romero + Claude (asistente).
+
+---
+
+## 11. Configuración del entorno de desarrollo
+
+### Estructura real del repo en disco
+
+El repositorio se clonó como `vehicule-guard/` (con typo) y el proyecto real está un nivel adentro:
+
+```
+vehicule-guard/          ← directorio donde se abre Claude Code
+└── vehicle-guard/       ← código fuente real (aquí está este CLAUDE.md)
+```
+
+Abrir Claude Code siempre desde `vehicule-guard/` (el raíz del repo git).
+
+### Permisos de Claude Code
+
+El archivo `../.claude/settings.json` (un nivel arriba de este CLAUDE.md) tiene los permisos para que Claude Code no pida confirmación en comandos comunes:
+
+- `pio *` — compilar, flashear, monitor serial ESP32
+- `npm run *`, `npm install *` — scripts y dependencias NestJS
+- `docker compose *` — levantar/bajar PostgreSQL + Mosquitto
+- `nest generate *` — scaffolding de módulos
+- `rm *`, `mkdir *`, `mv *`, `cp *` — operaciones de archivos
+
+### Extensión Claude Code en VS Code
+
+- Instalar desde el **Marketplace de VS Code** (buscar "Claude Code" de Anthropic), no desde archivo `.vsix`.
+- CLI requerido en PATH: verificar con `claude --version`. Si no está: `npm install -g @anthropic-ai/claude-code`.
+- Settings de VS Code relevantes: `"claudeCode.preferredLocation": "panel"`, `"claudeCode.useTerminal": false`.
